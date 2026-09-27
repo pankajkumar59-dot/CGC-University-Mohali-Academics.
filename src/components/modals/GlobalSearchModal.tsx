@@ -83,8 +83,8 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
       },
       {
         id: 'qa-mobility',
-        title: 'NEP 2020 Academic Mobility & ABC',
-        subtitle: 'DigiLocker credit transfer and semester exchange forms',
+        title: 'NEP 2026 Academic Mobility & ABC',
+        subtitle: 'DigiLocker credit transfer and semester exchange forms (2026 Model)',
         category: 'Quick Actions',
         icon: 'swap_horiz',
         action: () => {

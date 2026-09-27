@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
             src="https://lh3.googleusercontent.com/aida/AEtjO1X4optcITPddOZqk-Lg82pxc7PUiwdylTKlr1pOEn7zrfRUAr-HkTB8VRNIxgQDjCYtSi0lTp8m5mIgIOWvNiEDYP-CpDOeuplWYqpHYqpesuitSTrEoZb18J2DdV0dbpOnRbAMMMFS0YjaXz0IE1udzHVcXs7Hb5iFX02AdMfytl2Hy2ZcwhuzYgIuTyNGwyO6NQVHh-QS44aXeZ_pg45AVZ0PlJJOxjjDWnOhW777Q_9yEVCmOdIwOk"
             className="h-7 w-auto object-contain cursor-pointer"
             onClick={() => onNavigate('dashboard')}
-            title="Home - CGC Mohali Dashboard"
+            title="Home - CGC University Mohali Dashboard"
           />
 
           <div
@@ -68,7 +68,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => onNavigate('dashboard')}
           >
             <span className="text-[9px] font-bold text-[#835500] uppercase tracking-wider truncate">
-              CGC MOHALI • PORTAL
+              CGC UNIVERSITY • 2026 MODEL
             </span>
             <span className="text-[15px] font-bold text-[#002046] truncate leading-tight">
               {VIEW_TITLES[currentView] || 'Student Portal'}

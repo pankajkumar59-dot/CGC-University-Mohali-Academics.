@@ -123,7 +123,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
             onClick={() => onNavigate('academic-mobility')}
           >
             <span className="w-2 h-2 rounded-full bg-[#feae2c] animate-pulse"></span>
-            <span className="text-white font-medium">NEP Mobility 2024</span>
+            <span className="text-white font-medium">NEP 2026 Mobility Model</span>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
           </div>
         </div>
@@ -279,10 +279,10 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
         >
           <div className="min-w-0 pr-2">
             <span className="px-1.5 py-0.5 rounded bg-[#feae2c] text-[#6b4500] text-[8px] font-bold uppercase">
-              CSE AIML 1st Sem Master Vault
+              CGC University 2026 Master Repository
             </span>
             <p className="text-xs font-bold text-white truncate mt-1">
-              Handwritten Notes, Python &amp; AI Lab Codes
+              Handwritten Notes, Python &amp; AI Lab Codes (2026 Model)
             </p>
             <p className="text-[10px] text-[#87a0cd]">Mentor: Ms. Garima Singh Thakur, Dr. Manjit Singh</p>
           </div>

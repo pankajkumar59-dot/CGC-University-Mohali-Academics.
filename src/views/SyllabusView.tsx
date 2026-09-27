@@ -10,8 +10,8 @@ export const SyllabusView: React.FC<SyllabusViewProps> = ({
   onDownloadScheme,
   onShowToast,
 }) => {
-  const [activeSem, setActiveSem] = useState<number>(4);
-  const [openCourse, setOpenCourse] = useState<string>('BTCS-401');
+  const [activeSem, setActiveSem] = useState<number>(1);
+  const [openCourse, setOpenCourse] = useState<string>('BTAI-101');
 
   const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -24,15 +24,15 @@ export const SyllabusView: React.FC<SyllabusViewProps> = ({
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-base font-bold text-[#002046]">PTU Curriculum</h2>
-          <p className="text-[11px] text-[#44474e]">B.Tech Computer Science &amp; Engineering</p>
+          <h2 className="text-base font-bold text-[#002046]">CGC University 2026 Model Curriculum</h2>
+          <p className="text-[11px] text-[#44474e]">B.Tech Computer Science &amp; Engineering (AI &amp; ML)</p>
         </div>
         <button
           onClick={onDownloadScheme}
           className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-[#002046] text-white text-xs font-bold hover:bg-[#1b365d] transition-all shadow-xs"
         >
           <span className="material-symbols-outlined text-[16px]">file_download</span>
-          Scheme PDF
+          2026 Scheme PDF
         </button>
       </div>
 
@@ -40,14 +40,14 @@ export const SyllabusView: React.FC<SyllabusViewProps> = ({
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
         {semesters.map((sem) => {
           const isSelected = activeSem === sem;
-          const isCurrent = sem === 4;
+          const isCurrent = sem === 1;
 
           return (
             <button
               key={sem}
               onClick={() => {
                 setActiveSem(sem);
-                onShowToast(`Switched to Semester ${sem} PTU syllabus view`, 'assignment');
+                onShowToast(`Switched to Semester ${sem} 2026 Model syllabus view`, 'assignment');
               }}
               className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all ${
                 isSelected

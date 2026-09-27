@@ -20,11 +20,11 @@ export const AcademicMobilityView: React.FC<AcademicMobilityViewProps> = ({
       {/* Banner */}
       <div className="p-4 rounded-2xl bg-gradient-to-br from-[#002046] to-[#1b365d] text-white shadow-sm flex flex-col gap-1 border border-white/10">
         <span className="text-[9px] font-bold text-[#feae2c] uppercase tracking-wider">
-          NEP 2020 Academic Mobility
+          CGC University 2026 Academic Mobility Model
         </span>
-        <h2 className="text-base sm:text-lg font-bold">Academic Bank of Credits (ABC)</h2>
+        <h2 className="text-base sm:text-lg font-bold">NEP 2026 Academic Bank of Credits (ABC)</h2>
         <p className="text-[11px] text-[#87a0cd]">
-          Seamless credit transfer across CGC Landran, Jhanjeri &amp; SWAYAM/NPTEL portals.
+          Digital credit mapping across CGC University Mohali campuses, IIT/NPTEL portals &amp; SWAYAM.
         </p>
       </div>
 

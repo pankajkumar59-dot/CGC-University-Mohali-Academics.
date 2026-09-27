@@ -216,16 +216,17 @@ export const TIMETABLE_DATA: Record<string, TimetableSlot[]> = {
 export const NOTES_COLLECTION: NoteFile[] = [
   {
     id: 'note-ai-1',
-    title: 'AI: Foundations & Python Programming',
+    title: 'AI: Foundations & Python Programming (2026 Model)',
     description: 'Unit 1 & 2 Handwritten • AI Search Heuristics, A* Algorithm & Python Scripts',
-    subjectCategory: 'OS',
+    subjectCategory: 'AI',
     filename: 'AI_Python_Unit1_Heuristics.pdf',
     fileSize: '4.5 MB',
-    tag: 'UNIT 1 • FACULTY NOTE',
+    tag: 'UNIT 1 • 2026 MODEL',
     author: 'Ms. Garima Singh Thakur',
     downloads: 1680,
     isSavedOffline: true,
     contentPreview: `CGC UNIVERSITY MOHALI - DEPARTMENT OF CSE (AIML)
+2026 ACADEMIC MODEL REPOSITORY
 Subject: Foundations of AI & Python Programming (BTAI-101)
 Instructor: Ms. Garima Singh Thakur • Einstein Academic Wing
 
@@ -242,198 +243,184 @@ Instructor: Ms. Garima Singh Thakur • Einstein Academic Wing
 - Matplotlib plotting of decision boundaries and cost functions.`
   },
   {
+    id: 'note-math-1',
+    title: 'Applied Mathematics - I: Calculus & Linear Algebra (2026 Model)',
+    description: 'Matrices, Eigenvalues, Vector Spaces, Taylor expansions & AI optimization',
+    subjectCategory: 'MATHS',
+    filename: 'Maths1_Calculus_Cookbook_2026.pdf',
+    fileSize: '4.2 MB',
+    tag: 'UNIT 1 & 2 • 2026 MODEL',
+    author: 'Dr. Manjit Singh',
+    downloads: 1240,
+    isSavedOffline: true,
+    contentPreview: `CGC UNIVERSITY MOHALI - 2026 ACADEMIC REPOSITORY
+Subject: Applied Mathematics - I (BTAM-101)
+Unit 1 & 2: Matrices, Linear Algebra & Multivariable Calculus
+
+1. Characteristic Equation & Cayley-Hamilton Theorem:
+- Every square matrix satisfies its own characteristic equation: det(A - lambda*I) = 0.
+- Application in computing matrix powers A^n and inverse A^-1.
+
+2. Eigenvalues & Eigenvectors for AI:
+- Principal Component Analysis (PCA) projection relies on covariance matrix eigendecomposition.
+- Diagonalization: A = P * D * P^-1 if A possesses n linearly independent eigenvectors.
+
+3. Multivariable Calculus & Gradient Descent:
+- Gradient vector grad(f) points in direction of greatest rate of increase.
+- Hessian matrix determines convexity in optimization algorithms.`
+  },
+  {
+    id: 'note-phy-1',
+    title: 'Engineering Physics & Quantum Basics (2026 Model)',
+    description: 'Quantum wave mechanics, Qubits superposition, Band Theory & Hall effect',
+    subjectCategory: 'PHYSICS',
+    filename: 'Physics_Quantum_Basics_2026.pdf',
+    fileSize: '3.9 MB',
+    tag: 'CORE • 2026 MODEL',
+    author: 'Dr. Ravinder Sharma',
+    downloads: 890,
+    isSavedOffline: false,
+    contentPreview: `CGC UNIVERSITY MOHALI - 2026 MODEL REPOSITORY
+Subject: Engineering Physics & Quantum Basics (BTPH-101)
+Unit 1: Quantum Mechanics & Qubit Foundations
+
+1. Wave-Particle Duality & De Broglie Hypothesis:
+- lambda = h / p = h / (m * v)
+- Davisson-Germer electron diffraction validation.
+
+2. Schrodinger Wave Equation:
+- Time-independent formulation: (-hbar^2 / 2m) * nabla^2(psi) + V*psi = E*psi.
+- Born's statistical interpretation of wave function |psi|^2.
+
+3. Introduction to Quantum Computing Bits:
+- Classical bit: {0, 1}; Qubit: |psi> = alpha|0> + beta|1> where |alpha|^2 + |beta|^2 = 1.
+- Bloch sphere representation of qubit states.`
+  },
+  {
+    id: 'note-pyq-1',
+    title: 'CGC University 2026 Solved Model Papers & Viva Prep',
+    description: 'MST 1, MST 2 & Semester End model answers with 2026 grading rubric',
+    subjectCategory: 'PYQ',
+    filename: 'CGCU_2026_Model_Papers.pdf',
+    fileSize: '5.8 MB',
+    tag: '2026 MODEL PAPERS',
+    author: 'CGC University Academic Council',
+    downloads: 3450,
+    isSavedOffline: true,
+    contentPreview: `CGC UNIVERSITY MOHALI (2026 ACADEMIC MODEL)
+Compiled Official Model Papers & Solutions: B.Tech CSE (AIML) Semester 1
+
+Subject 1: Foundations of AI & Python (BTAI-101)
+Q1: Explain A* Search admissibility condition and formulate the 8-puzzle Manhattan distance heuristic.
+Solution:
+A heuristic h(n) is admissible if for all nodes n, 0 <= h(n) <= h*(n).
+For the 8-puzzle, Manhattan Distance = sum of absolute horizontal and vertical distances of tiles from goal positions. It never overestimates because every misplaced tile must move at least its Manhattan steps.
+
+Subject 2: Applied Mathematics - I (BTAM-101)
+Q2: Verify Cayley-Hamilton Theorem for matrix A = [[2, 1], [1, 2]] and compute A^-1.
+Characteristic equation: lambda^2 - 4*lambda + 3 = 0.
+A^2 - 4A + 3I = 0 => A^-1 = (4I - A) / 3.`
+  },
+  {
+    id: 'note-lab-1',
+    title: 'AI & Python Practical Lab Source Codes (2026 Model)',
+    description: 'Jupyter notebooks for State Space Search, 8-Puzzle, NumPy and Matplotlib plots',
+    subjectCategory: 'LAB',
+    filename: 'AI_Python_Lab_Notebooks_2026.zip',
+    fileSize: '6.4 MB',
+    tag: 'LAB REPO • 2026 MODEL',
+    author: 'Ms. Garima Singh Thakur',
+    downloads: 2100,
+    isSavedOffline: true,
+    contentPreview: `CGC UNIVERSITY MOHALI - EINSTEIN AI LAB
+Course Code: BTAI-102 (AI & Python Lab - 2026 Model)
+Lab In-charge: Ms. Garima Singh Thakur
+
+Experiment 1: Implement Breadth First Search (BFS) and Depth First Search (DFS) for Water Jug Problem.
+Experiment 2: Implement A* algorithm for finding the shortest path on a weighted grid with Euclidean heuristic.
+Experiment 3: NumPy tensor operations and vectorized calculation of covariance matrices without loops.
+Experiment 4: Matplotlib visualization of 2D classification decision boundaries.`
+  },
+  {
     id: 'note-os-1',
-    title: 'OS: Process Sync & Deadlocks',
-    description: 'Unit 3 Handwritten • Verified Topper Note • Peterson Algorithm & Bankers',
+    title: 'OS: Process Sync & Deadlocks (Reference)',
+    description: 'Verified Topper Note • Peterson Algorithm & Bankers Algorithm',
     subjectCategory: 'OS',
     filename: 'OS_Unit3_Semaphores.pdf',
     fileSize: '4.2 MB',
-    tag: 'UNIT 3 • FACULTY NOTE',
+    tag: 'REFERENCE VAULT',
     author: 'Dr. Preetinder Kaur',
     downloads: 1420,
-    isSavedOffline: true,
-    contentPreview: `CGC MOHALI - DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
+    isSavedOffline: false,
+    contentPreview: `CGC UNIVERSITY MOHALI - REFERENCE LIBRARY
 Subject: Operating Systems (BTCS-401)
-Unit 3: Process Synchronization & Deadlocks
-
-1. Critical Section Problem:
-A code segment where shared variables/memory can be accessed.
-Three Essential Criteria:
-- Mutual Exclusion: If process Pi is executing in its critical section, no other processes can be executing.
-- Progress: If no process is executing and some wish to enter, selection cannot be postponed indefinitely.
-- Bounded Waiting: A bound must exist on the number of times other processes are allowed to enter their critical section after a request.
-
-2. Peterson's Algorithm (Two Process Solution):
-boolean flag[2] = {false, false};
-int turn;
-
-void enter_region(int process) {
-  int other = 1 - process;
-  flag[process] = true;
-  turn = process;
-  while (flag[other] == true && turn == process); // Busy wait
-  // Critical section
-  flag[process] = false;
-}
-
-3. Semaphores:
-- wait(S): while (S <= 0); S--;
-- signal(S): S++;
-Binary Semaphore: Value ranges between 0 and 1 (Mutex).
-Counting Semaphore: Value can range over an unrestricted domain.`
+Unit 3: Process Synchronization & Deadlocks`
   },
   {
     id: 'note-daa-1',
-    title: 'DAA: Dynamic Programming Sheet',
+    title: 'DAA: Dynamic Programming Sheet (Reference)',
     description: '0/1 Knapsack, LCS, Matrix Chain & Graph • Master Formulas',
     subjectCategory: 'DAA',
     filename: 'DAA_DynamicProgramming.pdf',
     fileSize: '2.8 MB',
-    tag: 'UNIT 4 • TOPPER NOTE',
+    tag: 'REFERENCE VAULT',
     author: 'Prof. Hardeep Singh',
     downloads: 1890,
     isSavedOffline: false,
-    contentPreview: `CGC MOHALI - DAA TOPPER FORMULA REFERENCE (BTCS-402)
-Unit 4: Dynamic Programming & Optimal Substructure
-
-1. 0/1 Knapsack Problem:
-Recurrence Relation:
-V[i, w] = V[i-1, w] if wt[i] > w
-V[i, w] = max(V[i-1, w], val[i] + V[i-1, w - wt[i]]) if wt[i] <= w
-Time Complexity: O(n * W)
-Space Complexity: O(n * W) or optimized O(W)
-
-2. Longest Common Subsequence (LCS):
-LCS[i, j] = 0 if i==0 or j==0
-LCS[i, j] = 1 + LCS[i-1, j-1] if X[i-1] == Y[j-1]
-LCS[i, j] = max(LCS[i-1, j], LCS[i, j-1]) if X[i-1] != Y[j-1]
-Length of LCS for strings of length m and n is O(m*n).
-
-3. Matrix Chain Multiplication:
-m[i, j] = min { m[i, k] + m[k+1, j] + p[i-1]*p[k]*p[j] } for i <= k < j
-Time Complexity: O(n^3)`
+    contentPreview: `CGC UNIVERSITY MOHALI - DAA TOPPER FORMULA REFERENCE
+Unit 4: Dynamic Programming & Optimal Substructure`
   },
   {
     id: 'note-dbms-1',
-    title: 'DBMS: SQL & Normalization Revision',
-    description: 'Quick review cards + 1NF to BCNF charts • Solved PTU questions',
+    title: 'DBMS: SQL & Normalization Revision (Reference)',
+    description: 'Quick review cards + 1NF to BCNF charts • Solved queries',
     subjectCategory: 'DBMS',
     filename: 'DBMS_SQL_Normalization.pdf',
     fileSize: '5.1 MB',
-    tag: 'UNIT 2 • VIVA READY',
+    tag: 'REFERENCE VAULT',
     author: 'Prof. Rajesh Kumar',
     downloads: 1150,
     isSavedOffline: false,
-    contentPreview: `CGC MOHALI - DBMS QUICK VIVA & WRITTEN GUIDE (BTCS-403)
-Unit 2: Relational Schema Design & Normal Forms
-
-1. Functional Dependency (FD):
-X -> Y means if two tuples agree on attribute X, they must agree on Y.
-
-2. Normal Forms Checklist:
-- 1NF: Each column contains atomic values; no repeating groups.
-- 2NF: In 1NF and no non-prime attribute is partially dependent on any candidate key.
-- 3NF: In 2NF and no transitive dependency exists (for every X -> Y, either X is super key or Y is prime attribute).
-- BCNF (Boyce-Codd NF): Strictly, for every non-trivial FD X -> Y, X MUST BE A SUPER KEY.
-
-3. ACID Properties:
-- Atomicity (All or Nothing)
-- Consistency (Database invariants maintained)
-- Isolation (Concurrent transactions do not interfere)
-- Durability (Committed changes survive system crash)`
-  },
-  {
-    id: 'note-pyq-1',
-    title: 'PTU 4th Sem Solved PYQ Papers',
-    description: 'MST 1, MST 2 & End-term answers with grading keys (2021-2023)',
-    subjectCategory: 'PYQ',
-    filename: 'PTU_4thSem_PYQs.pdf',
-    fileSize: '6.4 MB',
-    tag: 'SOLVED PAPERS',
-    author: 'CGC Faculty Board',
-    downloads: 3200,
-    isSavedOffline: true,
-    contentPreview: `I.K. GUJRAL PUNJAB TECHNICAL UNIVERSITY (IKGPTU)
-Compiled Previous Year Solved Papers: B.Tech CSE 4th Semester
-
-Subject 1: Operating Systems (BTCS-401)
-Q1: Explain Bankers Algorithm for Deadlock Avoidance with a state matrix of 5 processes and 3 resource types (A, B, C).
-Answer Summary:
-Available vector: [3, 3, 2]
-Need Matrix = Max Matrix - Allocation Matrix.
-Run Safety Algorithm: Find process i such that Need[i] <= Work.
-If all processes terminate in a sequence <P1, P3, P4, P0, P2>, state is SAFE.
-
-Subject 2: Design & Analysis of Algorithms (BTCS-402)
-Q2: Solve recurrence T(n) = 2T(n/2) + n using Master Theorem.
-Answer Summary:
-a = 2, b = 2, f(n) = n
-log_b(a) = log_2(2) = 1.
-f(n) = Theta(n^(log_b(a))) = Theta(n). Case 2 applies!
-Therefore, T(n) = Theta(n log n).`
-  },
-  {
-    id: 'note-math-1',
-    title: 'Discrete Mathematics Proofs & Graph Theory',
-    description: 'Recurrence Relations, Eulerian & Hamiltonian paths, Group Theory',
-    subjectCategory: 'MATHS',
-    filename: 'Discrete_Maths_Notes.pdf',
-    fileSize: '3.7 MB',
-    tag: 'UNIT 1 & 2',
-    author: 'Dr. Manjit Singh',
-    downloads: 980,
-    isSavedOffline: false,
-    contentPreview: `CGC MOHALI - DISCRETE MATHEMATICS (BTAM-401)
-Unit 1 & 2: Propositional Logic & Graph Theory
-
-1. Handshaking Lemma:
-Sum of degrees of all vertices = 2 * (Number of edges).
-Corollary: In any graph, the number of vertices with odd degree is always EVEN.
-
-2. Euler Path & Circuit:
-- An Euler path visits every edge exactly once. Exists iff exactly 0 or 2 vertices have odd degree.
-- An Euler circuit starts and ends at same vertex, visiting every edge once. Exists iff graph is connected and EVERY vertex has EVEN degree.
-
-3. Pigeonhole Principle:
-If k items are put into m containers and k > m, at least one container must contain > 1 item.`
+    contentPreview: `CGC UNIVERSITY MOHALI - DBMS QUICK VIVA & WRITTEN GUIDE
+Unit 2: Relational Schema Design & Normal Forms`
   }
 ];
 
 export const SYLLABUS_COURSES: SyllabusCourse[] = [
   {
-    code: 'BTCS-401',
-    name: 'Operating Systems',
+    code: 'BTAI-101',
+    name: 'Foundations of AI & Python Programming (2026 Model)',
     credits: 4,
-    completionPct: 65,
+    completionPct: 75,
     units: [
-      { unitNumber: 1, title: 'System Calls & OS Architecture', topics: ['Monolithic vs Microkernel', 'Dual-mode operation', 'System call mechanics'], status: 'Completed', completionPct: 100 },
-      { unitNumber: 2, title: 'Process Scheduling & Threads', topics: ['FCFS, SJF, Round Robin', 'Multi-level feedback queues', 'Pthreads API'], status: 'Completed', completionPct: 100 },
-      { unitNumber: 3, title: 'Process Sync & Semaphores', topics: ['Critical section problem', 'Peterson solution', 'Counting semaphores', 'Deadlock Bankers algorithm'], status: 'In Progress', completionPct: 60 },
-      { unitNumber: 4, title: 'Memory Management & Paging', topics: ['Virtual memory', 'Page replacement algorithms (FIFO, LRU, Optimal)', 'Thrashing & Working set'], status: 'Pending', completionPct: 0 }
+      { unitNumber: 1, title: 'Intelligent Agents & Problem Formulations', topics: ['Agent architectures (PEAS)', 'Environment properties', 'State space graph modeling'], status: 'Completed', completionPct: 100 },
+      { unitNumber: 2, title: 'Informed Search & Heuristic Algorithms', topics: ['Uninformed BFS/DFS/UCS', 'A* Search & admissibility proof', 'Greedy Best-First search', 'Game playing Minimax & Alpha-Beta'], status: 'Completed', completionPct: 100 },
+      { unitNumber: 3, title: 'Python Vectorized Computing & NumPy', topics: ['NumPy arrays & broadcasting', 'Linear algebra dot products', 'Pandas dataframes', 'Matplotlib visual analytics'], status: 'In Progress', completionPct: 65 },
+      { unitNumber: 4, title: 'Introduction to Machine Learning Models', topics: ['Supervised vs Unsupervised', 'Perceptrons & Linear Regression', 'Loss functions & Gradient Descent', 'Model evaluation metrics'], status: 'Pending', completionPct: 0 }
     ]
   },
   {
-    code: 'BTCS-402',
-    name: 'Design & Analysis of Algorithms',
+    code: 'BTAM-101',
+    name: 'Applied Mathematics - I: Calculus & Linear Algebra (2026 Model)',
     credits: 4,
-    completionPct: 58,
+    completionPct: 68,
     units: [
-      { unitNumber: 1, title: 'Asymptotic Notations & Recurrences', topics: ['Big O, Omega, Theta', 'Substitution method', 'Recursion tree', 'Master Theorem'], status: 'Completed', completionPct: 100 },
-      { unitNumber: 2, title: 'Divide & Conquer, Greedy Methods', topics: ['Merge Sort, Quick Sort', 'Huffman Coding', 'Fractional Knapsack', 'Prims & Kruskals MST'], status: 'Completed', completionPct: 100 },
-      { unitNumber: 3, title: 'Dynamic Programming & Graphs', topics: ['0/1 Knapsack', 'Longest Common Subsequence', 'Matrix Chain Multiplication', 'Bellman-Ford & Floyd-Warshall'], status: 'In Progress', completionPct: 45 },
-      { unitNumber: 4, title: 'Backtracking & NP Completeness', topics: ['N-Queens problem', 'Subset Sum', 'P vs NP class', 'Cooks Theorem overview'], status: 'Pending', completionPct: 0 }
+      { unitNumber: 1, title: 'Matrices & Systems of Linear Equations', topics: ['Row echelon form & matrix rank', 'Gauss elimination & Gauss-Jordan', 'Consistency of linear systems'], status: 'Completed', completionPct: 100 },
+      { unitNumber: 2, title: 'Eigenvalues & Diagonalization for AI', topics: ['Cayley-Hamilton theorem', 'Eigenvalues & Eigenvectors', 'Diagonalization & Quadratic forms'], status: 'Completed', completionPct: 100 },
+      { unitNumber: 3, title: 'Differential Calculus & Taylor Series', topics: ['Partial derivatives & Euler theorem', 'Taylor & Maclaurin expansions', 'Maxima & Minima of multivariable functions'], status: 'In Progress', completionPct: 55 },
+      { unitNumber: 4, title: 'Vector Spaces & Inner Product Spaces', topics: ['Subspaces, basis & dimension', 'Gram-Schmidt orthogonalization', 'Singular Value Decomposition (SVD) concept'], status: 'Pending', completionPct: 0 }
     ]
   },
   {
-    code: 'BTCS-403',
-    name: 'Database Management Systems',
+    code: 'BTPH-101',
+    name: 'Engineering Physics & Quantum Basics (2026 Model)',
     credits: 3,
-    completionPct: 72,
+    completionPct: 60,
     units: [
-      { unitNumber: 1, title: 'ER Diagrams & Relational Algebra', topics: ['Entity sets & Cardinalities', 'Selection, Projection, Joins', 'Relational Calculus'], status: 'Completed', completionPct: 100 },
-      { unitNumber: 2, title: 'Functional Dependencies & Normalization', topics: ['Armstrong axioms', '1NF, 2NF, 3NF', 'BCNF decomposition', 'Lossless join & Dependency preservation'], status: 'Completed', completionPct: 100 },
-      { unitNumber: 3, title: 'Transactions & Concurrency Control', topics: ['ACID criteria', 'Serializability', 'Two-Phase Locking (2PL)', 'Timestamp ordering'], status: 'In Progress', completionPct: 50 },
-      { unitNumber: 4, title: 'Indexing & Recovery Systems', topics: ['B-Trees & B+ Trees', 'Log-based recovery', 'Checkpointing', 'NoSQL introduction'], status: 'Pending', completionPct: 0 }
+      { unitNumber: 1, title: 'Quantum Mechanics Foundations', topics: ['Wave-particle duality', 'De Broglie wavelength', 'Heisenberg uncertainty principle', 'Schrodinger wave equation'], status: 'Completed', completionPct: 100 },
+      { unitNumber: 2, title: 'Semiconductor Physics & Band Theory', topics: ['Kronig-Penney model', 'Direct & Indirect bandgap semiconductors', 'Carrier concentration & Fermi level', 'Hall effect & applications'], status: 'Completed', completionPct: 100 },
+      { unitNumber: 3, title: 'Optoelectronics & Fiber Optics', topics: ['Einstein coefficients', 'Ruby & He-Ne lasers', 'Numerical aperture & fiber modes', 'Optical communication link'], status: 'In Progress', completionPct: 40 },
+      { unitNumber: 4, title: 'Quantum Computing Hardware Basics', topics: ['Qubit state representation', 'Bloch sphere geometry', 'Quantum logic gates (X, H, CNOT)', 'Superconducting qubit intro'], status: 'Pending', completionPct: 0 }
     ]
   }
 ];
@@ -441,45 +428,45 @@ export const SYLLABUS_COURSES: SyllabusCourse[] = [
 export const NOTICES_LIST: NoticeItem[] = [
   {
     id: 'n1',
-    title: 'Mid Semester Examination (MST-1) Date Sheet Released',
-    description: 'Mid Semester Examinations (MST-1) commence from Oct 14th across all engineering wings. Block 3 designated for CSE students. Admit cards and seating charts will be visible on portal 48 hours prior.',
+    title: 'Mid Semester Examination (MST-1) 2026 Date Sheet Released',
+    description: 'Mid Semester Examinations (MST-1) 2026 commence from Oct 14th across all engineering wings. Block 3 designated for CSE & AIML students. Seating charts and digital hall tickets will be visible on portal 48 hours prior.',
     category: 'Exam',
     date: 'Yesterday',
-    refNo: 'CGC/EXAM/24/109',
-    attachmentName: 'MST1_Datesheet_Landran_2024.pdf',
+    refNo: 'CGCU/EXAM/26/109',
+    attachmentName: 'MST1_Datesheet_CGCU_2026.pdf',
     isRead: false,
     priority: 'high'
   },
   {
     id: 'n2',
-    title: 'Pre-Placement Coding Assessment & Amazon Hackathon',
-    description: 'Corporate Resource Centre (CRC) announces national coding assessment with Amazon, Cisco, and Microsoft sponsorship. Mandatory orientation session for CSE/IT students in Audi 1 on Saturday 10:00 AM.',
+    title: 'Amazon, Google & Microsoft Pre-Placement Hackathon 2026',
+    description: 'Corporate Resource Centre (CRC Mohali) announces national AI hackathon and coding sprint. Mandatory orientation session for First Semester B.Tech AIML students in Einstein Seminar Hall on Saturday 10:00 AM.',
     category: 'Placement',
     date: '3 days ago',
-    refNo: 'CGC/CRC/24/048',
-    attachmentName: 'Amazon_Hackathon_Guidelines.pdf',
+    refNo: 'CGCU/CRC/26/048',
+    attachmentName: 'Amazon_AI_Hackathon_2026.pdf',
     isRead: false,
     priority: 'high'
   },
   {
     id: 'n3',
-    title: 'Parivartan 2024 Tech Fest Registrations Open',
-    description: 'Annual National Tech-Cultural Fest Parivartan 2024 begins next month! Join student organizing committees for Code Clash, RoboWars, Drone Racing, and Stage Management.',
+    title: 'Parivartan 2026 National Tech-Cultural Fest Registrations Open',
+    description: 'Annual National Tech Fest Parivartan 2026 begins next month! Join student organizing committees for AI Hackathons, RoboWars, Drone Racing, and Stage Management.',
     category: 'Clubs',
     date: '5 days ago',
-    refNo: 'CGC/CLUBS/24/014',
-    attachmentName: 'Parivartan_Rulebook_2024.pdf',
+    refNo: 'CGCU/CLUBS/26/014',
+    attachmentName: 'Parivartan_Rulebook_2026.pdf',
     isRead: true,
     priority: 'normal'
   },
   {
     id: 'n4',
-    title: 'Academic Mobility: NEP 2020 DigiLocker ABC Credit Transfer Form',
-    description: 'Dean Academics notification for Semester 4 students opting for NPTEL/SWAYAM credit transfers or campus semester exchange. Last date of credit mapping submission is Oct 25th.',
+    title: 'Academic Mobility: NEP 2026 DigiLocker ABC Credit Transfer Form',
+    description: 'Dean Academics notification for students under the 2026 Academic Model opting for NPTEL/SWAYAM credit transfers or campus semester exchange. Last date of credit mapping submission is Oct 25th.',
     category: 'Academic',
     date: '1 week ago',
-    refNo: 'CGC/ACAD/24/082',
-    attachmentName: 'NEP_Credit_Transfer_Form.pdf',
+    refNo: 'CGCU/ACAD/26/082',
+    attachmentName: 'NEP_Credit_Transfer_Form_2026.pdf',
     isRead: true,
     priority: 'normal'
   }

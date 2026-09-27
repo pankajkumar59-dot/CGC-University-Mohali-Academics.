@@ -17,16 +17,25 @@ export const NotesView: React.FC<NotesViewProps> = ({
   offlineCount,
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState<'ALL' | 'OS' | 'DAA' | 'DBMS' | 'PYQ' | 'MATHS'>('ALL');
+  const [activeCategory, setActiveCategory] = useState<
+    'ALL' | 'AI' | 'MATHS' | 'PHYSICS' | 'LAB' | 'PYQ' | 'OS' | 'DAA' | 'DBMS'
+  >('ALL');
 
-  const categories: Array<'ALL' | 'OS' | 'DAA' | 'DBMS' | 'PYQ' | 'MATHS'> = [
-    'ALL',
-    'OS',
-    'DAA',
-    'DBMS',
-    'PYQ',
-    'MATHS',
-  ];
+  const categories: Array<
+    'ALL' | 'AI' | 'MATHS' | 'PHYSICS' | 'LAB' | 'PYQ' | 'OS' | 'DAA' | 'DBMS'
+  > = ['ALL', 'AI', 'MATHS', 'PHYSICS', 'LAB', 'PYQ', 'OS', 'DAA', 'DBMS'];
+
+  const categoryLabels: Record<string, string> = {
+    ALL: 'All Repositories',
+    AI: 'AI & Python',
+    MATHS: 'Applied Maths',
+    PHYSICS: 'Quantum Physics',
+    LAB: 'Lab Codes',
+    PYQ: '2026 Model Papers',
+    OS: 'OS (Ref)',
+    DAA: 'DAA (Ref)',
+    DBMS: 'DBMS (Ref)',
+  };
 
   const filteredNotes = notes.filter((note) => {
     const matchesCategory = activeCategory === 'ALL' || note.subjectCategory === activeCategory;
@@ -46,8 +55,12 @@ export const NotesView: React.FC<NotesViewProps> = ({
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-base font-bold text-[#002046]">Notes &amp; Study Vault</h2>
-          <p className="text-[11px] text-[#44474e]">Verified Faculty Handouts &amp; PTU Topper Notes</p>
+          <h2 className="text-base font-bold text-[#002046]">
+            CGC University 2026 Model • Study Repositories
+          </h2>
+          <p className="text-[11px] text-[#44474e]">
+            Verified 2026 Curriculum Handouts, Code Notebooks &amp; Model Papers
+          </p>
         </div>
         <button
           onClick={onNavigateToVault}
@@ -67,7 +80,7 @@ export const NotesView: React.FC<NotesViewProps> = ({
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search OS, DAA, DBMS, PTU papers..."
+          placeholder="Search AI Python, Linear Algebra, Quantum Physics, 2026 Model papers..."
           className="w-full bg-white border border-[#cbdbf5] rounded-xl pl-9 pr-8 py-2 text-xs text-[#002046] focus:outline-none focus:ring-2 focus:ring-[#002046] placeholder:text-[#74777f] shadow-xs"
         />
         {searchQuery && (
@@ -93,7 +106,7 @@ export const NotesView: React.FC<NotesViewProps> = ({
                 : 'bg-[#eff4ff] text-[#44474e] hover:bg-[#e5eeff]'
             }`}
           >
-            {cat === 'ALL' ? 'All Materials' : cat}
+            {categoryLabels[cat] || cat}
           </button>
         ))}
       </div>
@@ -104,7 +117,7 @@ export const NotesView: React.FC<NotesViewProps> = ({
           <div className="p-8 text-center bg-white rounded-xl border border-[#e5eeff]">
             <span className="material-symbols-outlined text-3xl text-[#74777f] mb-1">search_off</span>
             <p className="text-xs font-bold text-[#002046]">No notes found matching "{searchQuery}"</p>
-            <p className="text-[11px] text-[#44474e] mt-0.5">Try searching for OS, DAA, or DBMS</p>
+            <p className="text-[11px] text-[#44474e] mt-0.5">Try searching for AI, Maths, Physics or Model Papers</p>
           </div>
         ) : (
           filteredNotes.map((note) => (
@@ -118,7 +131,13 @@ export const NotesView: React.FC<NotesViewProps> = ({
               >
                 <div className="w-10 h-10 rounded-lg bg-[#dce9ff] flex flex-col items-center justify-center text-[#002046] shrink-0">
                   <span className="material-symbols-outlined text-[18px]">
-                    {note.subjectCategory === 'DAA'
+                    {note.subjectCategory === 'AI' || note.subjectCategory === 'LAB'
+                      ? 'terminal'
+                      : note.subjectCategory === 'MATHS'
+                      ? 'calculate'
+                      : note.subjectCategory === 'PHYSICS'
+                      ? 'science'
+                      : note.subjectCategory === 'DAA'
                       ? 'code'
                       : note.subjectCategory === 'DBMS'
                       ? 'database'

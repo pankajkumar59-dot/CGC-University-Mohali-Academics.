@@ -244,22 +244,22 @@ export const AcademicGoalsCard: React.FC<AcademicGoalsCardProps> = ({
         <div className="flex items-center gap-1.5 flex-wrap">
           <span className="text-[10px] font-bold text-[#74777f] uppercase">Quick Log:</span>
           <button
-            onClick={() => handleQuickAdd('Operating Systems', 'BTCS-401', 1.0, 'Semaphores & Peterson algorithm')}
+            onClick={() => handleQuickAdd('Foundations of AI & Python', 'BTAI-101', 1.0, 'A* Heuristics & State Space')}
             className="px-2 py-0.5 rounded bg-white hover:bg-[#eff4ff] border border-[#cbdbf5] text-[10px] font-bold text-[#002046] transition-colors"
           >
-            +1h OS
+            +1h AI &amp; Python
           </button>
           <button
-            onClick={() => handleQuickAdd('Design & Analysis of Algorithms', 'BTCS-402', 1.5, 'Dynamic Programming Knapsack')}
+            onClick={() => handleQuickAdd('Applied Mathematics - I', 'BTAM-101', 1.5, 'Linear Algebra & Eigenvalues')}
             className="px-2 py-0.5 rounded bg-white hover:bg-[#eff4ff] border border-[#cbdbf5] text-[10px] font-bold text-[#002046] transition-colors"
           >
-            +1.5h DAA
+            +1.5h Maths-I
           </button>
           <button
-            onClick={() => handleQuickAdd('Database Management Systems', 'BTCS-403', 1.0, 'SQL Normalization 3NF/BCNF')}
+            onClick={() => handleQuickAdd('Engineering Physics', 'BTPH-101', 1.0, 'Quantum Mechanics & Qubits')}
             className="px-2 py-0.5 rounded bg-white hover:bg-[#eff4ff] border border-[#cbdbf5] text-[10px] font-bold text-[#002046] transition-colors"
           >
-            +1h DBMS
+            +1h Physics
           </button>
         </div>
 

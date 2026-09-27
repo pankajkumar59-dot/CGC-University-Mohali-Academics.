@@ -12,8 +12,8 @@ export const StudySessionModal: React.FC<StudySessionModalProps> = ({
   onClose,
   onAddSession,
 }) => {
-  const [subject, setSubject] = useState('Operating Systems');
-  const [subjectCode, setSubjectCode] = useState('BTCS-401');
+  const [subject, setSubject] = useState('Foundations of AI & Python');
+  const [subjectCode, setSubjectCode] = useState('BTAI-101');
   const [topic, setTopic] = useState('');
   const [duration, setDuration] = useState<string>('1.5');
   const [day, setDay] = useState<'Mon' | 'Tue' | 'Wed' | 'Thu' | 'Fri' | 'Sat' | 'Sun'>('Thu');
@@ -22,13 +22,15 @@ export const StudySessionModal: React.FC<StudySessionModalProps> = ({
   if (!isOpen) return null;
 
   const subjectOptions = [
-    { name: 'Operating Systems', code: 'BTCS-401' },
-    { name: 'Design & Analysis of Algorithms', code: 'BTCS-402' },
-    { name: 'Database Management Systems', code: 'BTCS-403' },
-    { name: 'Discrete Mathematics', code: 'BTAM-401' },
-    { name: 'Computer Organization & Architecture', code: 'BTCS-404' },
-    { name: 'Universal Human Values', code: 'HSMC-122' },
-    { name: 'PTU Solved PYQ Practice', code: 'PYQ-400' },
+    { name: 'Foundations of AI & Python', code: 'BTAI-101' },
+    { name: 'Applied Mathematics - I', code: 'BTAM-101' },
+    { name: 'Engineering Physics & Quantum Basics', code: 'BTPH-101' },
+    { name: 'AI & Python Practical Lab', code: 'BTAI-102' },
+    { name: 'Basic Electrical & Electronics Engineering', code: 'BTEE-101' },
+    { name: 'Human Values & Professional Ethics', code: 'HVPE-101' },
+    { name: 'CGC University 2026 Model Papers Prep', code: 'CGCU-2026' },
+    { name: 'Operating Systems (Reference)', code: 'BTCS-401' },
+    { name: 'Design & Analysis of Algorithms (Reference)', code: 'BTCS-402' },
   ];
 
   const handleSubjectChange = (name: string) => {

@@ -78,7 +78,7 @@ export interface NoteFile {
   id: string;
   title: string;
   description: string;
-  subjectCategory: 'OS' | 'DAA' | 'DBMS' | 'PYQ' | 'MATHS' | 'LAB';
+  subjectCategory: 'AI' | 'MATHS' | 'PHYSICS' | 'OS' | 'DAA' | 'DBMS' | 'PYQ' | 'LAB';
   filename: string;
   fileSize: string;
   tag: string;

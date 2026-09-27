@@ -17,32 +17,39 @@ export const MasterRepoModal: React.FC<MasterRepoModalProps> = ({
 
   const repoFiles = [
     {
-      title: 'OS Linux Kernel Lab Manual (Ubuntu)',
-      desc: 'Shell scripting, process fork(), semaphore implementation in C',
-      size: '5.8 MB',
-      type: 'Lab Manual',
-      filename: 'OS_Linux_Kernel_Lab_Manual.pdf'
-    },
-    {
-      title: 'DAA Algorithm Viva Voce Question Bank',
-      desc: 'Top 75 faculty viva questions with concise one-liner model responses',
-      size: '2.4 MB',
-      type: 'Viva Bank',
-      filename: 'DAA_Viva_Questions.pdf'
-    },
-    {
-      title: 'DBMS MySQL & PL/SQL Query Cookbook',
-      desc: 'Cursors, triggers, procedures, and complex nested queries for lab exam',
-      size: '3.6 MB',
-      type: 'Lab Codes',
-      filename: 'DBMS_SQL_Cookbook.pdf'
-    },
-    {
-      title: 'Design & Analysis of Algorithms Code Vault',
-      desc: 'Clean C++/Java implementations of Knapsack, LCS, Dijkstra & Huffman',
-      size: '4.2 MB',
+      title: 'BTAI-101: AI Foundations & Python Code Repo (2026 Model)',
+      desc: 'NumPy vectorization, A* search heuristics, state space models & Jupyter Notebooks',
+      size: '6.4 MB',
       type: 'Source Codes',
-      filename: 'DAA_Complete_Implementations.zip'
+      filename: 'BTAI101_AI_Python_Repo_2026.zip'
+    },
+    {
+      title: 'BTAI-102: AI Lab Viva Voce Question Bank (2026 Model)',
+      desc: '100 faculty viva questions with model answers compiled by Ms. Garima Singh Thakur',
+      size: '2.8 MB',
+      type: 'Viva Bank',
+      filename: 'BTAI102_Viva_Question_Bank_2026.pdf'
+    },
+    {
+      title: 'BTAM-101: Applied Mathematics-I Proofs & Calculus Cookbook',
+      desc: 'Linear algebra, matrix diagonalization, multivariable calculus & Taylor expansions',
+      size: '4.2 MB',
+      type: 'Problem Bank',
+      filename: 'BTAM101_Calculus_Cookbook_2026.pdf'
+    },
+    {
+      title: 'BTPH-101: Quantum Computing Basics & Physics Lab Manual',
+      desc: 'Quantum bits, Qubit superposition simulation & Hall Effect Lab calculations (2026 Scheme)',
+      size: '3.9 MB',
+      type: 'Lab Manual',
+      filename: 'BTPH101_Quantum_Physics_Lab_2026.pdf'
+    },
+    {
+      title: 'CGCU-2026: NEP 2026 FYUP Curriculum & Credit Scheme',
+      desc: 'Official 4-Year B.Tech CSE (AIML) Credit Framework, Elective Matrix & Digilocker Mapping',
+      size: '2.1 MB',
+      type: 'NEP Scheme',
+      filename: 'CGC_University_2026_Curriculum_Scheme.pdf'
     }
   ];
 
@@ -53,8 +60,8 @@ export const MasterRepoModal: React.FC<MasterRepoModalProps> = ({
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[#feae2c] text-[22px]">folder_special</span>
             <div>
-              <h3 className="text-xs font-bold">CSE 4th Sem Master Vault</h3>
-              <p className="text-[10px] text-[#87a0cd]">Faculty Handouts, Lab Manuals &amp; Codes</p>
+              <h3 className="text-xs font-bold">CGC University 2026 Master Repository</h3>
+              <p className="text-[10px] text-[#87a0cd]">B.Tech CSE (AIML) • 2026 Academic Model Cloud Vault</p>
             </div>
           </div>
           <button
@@ -68,9 +75,9 @@ export const MasterRepoModal: React.FC<MasterRepoModalProps> = ({
 
         <div className="p-3.5 overflow-y-auto space-y-2.5">
           <div className="p-2.5 rounded-lg bg-[#eff4ff] border border-[#dce9ff] text-[11px] text-[#002046]">
-            <p className="font-bold text-[#835500]">Compiled by Department of CSE</p>
+            <p className="font-bold text-[#835500]">CGC University 2026 Academic Model</p>
             <p className="text-[10px] text-[#44474e] mt-0.5">
-              Verified by Dr. Preetinder Kaur &amp; Prof. Hardeep Singh for Semester 4 (Sections A &amp; B).
+              Verified by mentor Ms. Garima Singh Thakur &amp; Board of Studies for 1st Semester CSE (AIML).
             </p>
           </div>
 
@@ -114,9 +121,9 @@ export const MasterRepoModal: React.FC<MasterRepoModalProps> = ({
         </div>
 
         <div className="p-3 bg-[#e5eeff] border-t border-[#cbdbf5] flex items-center justify-between text-xs">
-          <span className="text-[10px] text-[#44474e]">Total Bundle Size: 16.0 MB</span>
+          <span className="text-[10px] text-[#44474e]">Total Repository Bundle: 19.4 MB</span>
           <button
-            onClick={() => onDownload('CSE_Sem4_Complete_Vault_Bundle.zip', 'CSE 4th Sem Complete Vault Bundle')}
+            onClick={() => onDownload('CGCU_2026_Model_CSE_AIML_Vault.zip', 'CGC University 2026 Model AIML Complete Vault')}
             className="px-3 py-1.5 rounded-lg bg-[#002046] text-white font-bold text-xs hover:bg-[#1b365d] active:scale-95 flex items-center gap-1 shadow-sm"
           >
             <span className="material-symbols-outlined text-[15px]">archive</span>

@@ -2,5 +2,7 @@
   "name": "CGC Mohali Student Portal",
   "description": "Comprehensive academic student portal for CGC Mohali (Landran & Jhanjeri), featuring attendance analytics, PTU curriculum, results, class timetable, academic mobility, and AI study copilot.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

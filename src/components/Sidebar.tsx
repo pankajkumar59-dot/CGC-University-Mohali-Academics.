@@ -27,7 +27,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'attendance', label: 'Attendance & Bunks', icon: 'donut_large', badge: `${currentStudent.overallAttendance}%` },
     { id: 'results', label: 'Results & Transcript', icon: 'verified', badge: `CGPA ${currentStudent.cgpa}` },
     { id: 'timetable', label: 'Class Timetable', icon: 'calendar_month' },
-    { id: 'notes', label: 'Notes & Books', icon: 'menu_book', count: '48 New' },
+    { id: 'notes', label: 'Study Repositories', icon: 'menu_book', count: '2026 Model' },
     { id: 'copilot', label: 'CGC Copilot AI', icon: 'auto_awesome', highlight: true },
     { id: 'syllabus', label: 'Curriculum Scheme', icon: 'assignment' },
     { id: 'academic-mobility', label: 'Academic Mobility', icon: 'swap_horiz' },
