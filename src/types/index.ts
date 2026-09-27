@@ -122,6 +122,10 @@ export interface ChatMessage {
   text: string;
   timestamp: string;
   topic?: string;
+  modelUsed?: string;
+  grounded?: boolean;
+  sources?: Array<{ title: string; uri: string }>;
+  searchQueries?: string[];
 }
 
 export interface StudySession {
